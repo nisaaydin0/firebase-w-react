@@ -21,13 +21,13 @@ function SingUp() {
     <div className='max-w-md mx-auto py-12'>
         <h1 className='text-2xl'>Create New Account</h1>
         <form onSubmit={handleSubmit} className='flex flex-col gap-4'> 
-            <input type='email' placeholder='Enter your email' value={email} onChange={(e)=> setEmail(e.currentTarget.value)} />
-            <input type='password' placeholder='Enter your password'value={password} onChange={(e)=> setPassword(e.currentTarget.value)} />
-            <input type='submit' value="Sign Up"/>
+            <input className="p-4 bg-gray-100 rounded-md"  type='email' placeholder='Enter your email' value={email} onChange={(e)=> setEmail(e.currentTarget.value)} />
+            <input className="p-4 bg-gray-100 rounded-md" type='password' placeholder='Enter your password'value={password} onChange={(e)=> setPassword(e.currentTarget.value)} />
+            <input type='submit' value="Sign Up" className='p-4 bg-green-400 rounded-md' />
             <Link to="/sign-in">You already have an account ? Sign In ! </Link>
         </form>
     </div>
   )
 }
 
-export default SingUp
+export default SingUp;
